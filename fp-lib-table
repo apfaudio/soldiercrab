@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "soldiercrab")(type "KiCad")(uri "${KIPRJMOD}/libraries/soldiercrab.pretty")(options "")(descr ""))
+  (lib (name "package-son")(type "KiCad")(uri "${KICAD7_FOOTPRINT_DIR}/Package_SON.pretty")(options "")(descr ""))
+  (lib (name "x2son")(type "KiCad")(uri "${KIPRJMOD}/libraries/apfelaudio/x2son.pretty")(options "")(descr ""))
+)
