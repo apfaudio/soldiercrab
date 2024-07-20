@@ -1024,12 +1024,6 @@
 		(uuid "57d6964c-1eaf-485b-a568-51401e3ce68f")
 	)
 	(junction
-		(at 167.64 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bbaf7ab2-7aa0-497e-844d-b1fd597ac7f9")
-	)
-	(junction
 		(at 201.93 66.04)
 		(diameter 1.016)
 		(color 0 0 0 0)
@@ -1276,16 +1270,6 @@
 		)
 		(uuid "26b07ace-5564-4688-9504-4a4d58da07b3")
 	)
-	(wire
-		(pts
-			(xy 167.64 77.47) (xy 184.15 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "275d592c-ced7-478c-a3f3-dc8c8805d025")
-	)
 	(bus
 		(pts
 			(xy 132.08 102.87) (xy 132.08 105.41)
@@ -1408,7 +1392,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 77.47) (xy 167.64 77.47)
+			(xy 146.05 77.47) (xy 184.15 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1568,7 +1552,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 77.47) (xy 167.64 80.01)
+			(xy 167.64 73.66) (xy 167.64 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2235,7 +2219,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 170.2562 65.4304 0)
+			(at 170.18 66.294 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2475,7 +2459,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 167.64 77.47 0)
+		(at 167.64 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2483,7 +2467,7 @@
 		(dnp no)
 		(uuid "46a42e75-6323-4825-b2be-79e5b9e8a250")
 		(property "Reference" "#PWR022"
-			(at 167.64 81.28 0)
+			(at 167.64 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2492,7 +2476,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 167.6781 73.6282 0)
+			(at 167.6781 69.8182 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2500,7 +2484,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 167.64 77.47 0)
+			(at 167.64 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2509,7 +2493,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 77.47 0)
+			(at 167.64 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2518,7 +2502,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 77.47 0)
+			(at 167.64 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)

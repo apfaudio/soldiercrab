@@ -2010,7 +2010,7 @@
 				)
 			)
 		)
-		(property "Value" "HyperRAM"
+		(property "Value" "PSRAM (oSPI /HyperRAM)"
 			(at 137.16 81.7372 0)
 			(effects
 				(font
@@ -2036,7 +2036,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "DRAM 64Mb HyperRAM x8, 166MHz, Ind temp, 3.0V"
+		(property "Description" ""
 			(at 137.16 102.87 0)
 			(effects
 				(font
@@ -2045,7 +2045,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Winbond"
+		(property "Manufacturer" ""
 			(at 137.16 102.87 0)
 			(effects
 				(font
@@ -2054,7 +2054,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "W956A8MBYA6I"
+		(property "Part Number" ""
 			(at 137.16 102.87 0)
 			(effects
 				(font
@@ -2063,7 +2063,7 @@
 				(hide yes)
 			)
 		)
-		(property "Substitution" "W956A8MBYA5I"
+		(property "Substitution" ""
 			(at 137.16 102.87 0)
 			(effects
 				(font
@@ -2072,7 +2072,7 @@
 				(hide yes)
 			)
 		)
-		(property "lcsc#" "C7428856 "
+		(property "lcsc#" "C5448342"
 			(at 137.16 102.87 0)
 			(effects
 				(font

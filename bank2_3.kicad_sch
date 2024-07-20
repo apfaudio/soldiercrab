@@ -6541,7 +6541,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "330R"
 			(at 240.665 107.95 0)
 			(effects
 				(font
@@ -6575,7 +6575,7 @@
 				(hide yes)
 			)
 		)
-		(property "lcsc#" "C25076"
+		(property "lcsc#" "C25104"
 			(at 238.76 107.95 0)
 			(effects
 				(font
@@ -6814,7 +6814,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "330R"
 			(at 234.315 107.95 0)
 			(effects
 				(font
@@ -6848,7 +6848,7 @@
 				(hide yes)
 			)
 		)
-		(property "lcsc#" "C25076"
+		(property "lcsc#" "C25104"
 			(at 232.41 107.95 0)
 			(effects
 				(font

@@ -14711,7 +14711,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "880ab7cd-cd38-4d1f-90aa-bce3f462d50c")
 		(property "Reference" "R16"
 			(at 49.53 94.234 90)
@@ -16049,7 +16049,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "f0d3f757-c919-4897-8a6f-8cfc1b753fe9")
 		(property "Reference" "U4"
 			(at 48.26 102.616 0)
