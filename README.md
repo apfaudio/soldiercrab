@@ -38,6 +38,17 @@ A nice resource for [designing appropriate carrier boards can be found here](htt
 
 Aside from in the schematic, you can find a (tested!) version of the SoM pinout in `amaranth-boards` format [here in the Tiliqua repository](https://github.com/apfelaudio/tiliqua/blob/e4d43d70f0be8f8c47809bad94cfb414b5939a86/gateware/src/tiliqua/tiliqua_platform.py#L18-L129).
 
+#### SC3 Complementary Pairs
+
+```
+6 are adjacent on the same side:
+[(13, 15), (20, 22), (52, 54), (58, 60), (62, 64), (68, 70)]
+2 are almost adjacent (1 pin gap) on the same side:
+[(55, 59), (67, 71)]
+10 not adjacent (>1pin gap or different sides):
+[(6, 17), (11, 19), (34, 35), (38, 41), (37, 43), (40, 47), (46, 57),, (63, 69)]
+```
+
 ## Where do I get one?
 
 If you are interested in prototyping with this SoM, feel free to send me an email. They are not generally available yet, but I plan to make it available on my store soon.
