@@ -9,7 +9,7 @@ It is the brain of [tiliqua](https://github.com/apfelaudio/tiliqua) and other [a
 
 **SoldierCrab** has the following core features:
 - ECP5 FPGA (-25K or -45K variant in caBGA256 package)
-- HyperRAM / oSPI-RAM (> 1Gb/sec bandwidth)
+- HyperRAM / oSPI-RAM (tested up to 400MByte/sec)
 - USB2 PHY with exposed ID, it can be used in device or host mode
 - 1V1 / 1V8 / 2V5 regulators onboard, 3V3 is all that's needed
 - PROGRAMN internally exposed for multibooting bitstreams
