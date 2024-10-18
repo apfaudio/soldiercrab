@@ -37,7 +37,6 @@ fp-info-cache
 # other KiCad generated files
 *.html
 *.net
-*.pdf
 *.svg
 *.xml
 *.cmp

@@ -1,7 +1,8 @@
-SoldierCrab
------------
+# SoldierCrab
 
 <sup>WARN: :construction: under construction! :construction: - this hardware is under active development</sup>
+
+![Image of SoldierCrab R2.0 top and bottom](img/soldiercrab-r2.jpg)
 
 [**SoldierCrab**](https://en.wikipedia.org/wiki/Mictyris_longicarpus) is an embeddable FPGA SoM (System-on-Module) designed for use in high-speed audio and USB applications.
 It is the brain of [tiliqua](https://github.com/apfelaudio/tiliqua) and other [apfelaudio products](https://apfelaudio.com/).
@@ -14,13 +15,32 @@ It is the brain of [tiliqua](https://github.com/apfelaudio/tiliqua) and other [a
 - PROGRAMN internally exposed for multibooting bitstreams
 - 2 indicator LEDs on the PCBA
 - 48MHz master clock
-- Card edge is basically: 45 exposed general purpose pins + 4-pin JTAG + USB2
+- Card edge is basically: 47 exposed general purpose pins + 4-pin JTAG + USB2
 - 22mmx22mm board size with M.2 E-key card edge (see 'Physical Compatibility' below)
 
-Physical Compatibility
-----------------------
+## Hardware Revisions
 
-**The SoldierCrab is 22mmx22mm with an M.2 E-key connector and offset mounting hole**. The mounting hole is offset such that this board is physically compatible with the SparkFun MicroMod format, however we **do not claim electrical compatibility with it** (even though this SoM will work with some MicroMod boards, the JTAG and I2C connections are in the wrong place for us to claim compatibility - this is intentional design choice to save routing space whilst trying to remain close to some kind of SoM standard).
+**There are currently 2 revisions of SoldierCrab in the wild.**
+- **R2.0**: LFE5U-45 with 7KL1282GAHY02 (3.3V HyperRAM, tested up to 200MB/sec)
+- **R3.0**: LFE5U-25 with APS256XXN-OBR (1.8V oSPI-RAM, tested up to 400MB/sec)
+
+PDF schematics for both can be found in the `schematics-pdf` folder.
+
+## Footprint / Physical Compatibility
+
+**The SoldierCrab is 22mmx22mm (+/- 0.3mm) with an M.2 E-key connector and offset mounting hole**. The mounting hole is offset such that this board is physically compatible with the SparkFun MicroMod format, however we **do not claim electrical compatibility with it** (even though this SoM will work with some MicroMod boards, the JTAG and I2C connections are in the wrong place for us to claim complete compatibility - this is intentional design choice to save routing space whilst trying to remain close to some kind of SoM standard).
+
+On my carrier boards, as a connector I am using a [TE Connectivity 2199230-4](https://www.lcsc.com/product-detail/Edgeboard-Connectors_TE-Connectivity-2199230-4_C2977809.html).
+
+A nice resource for [designing appropriate carrier boards can be found here](https://learn.sparkfun.com/tutorials/designing-with-micromod/how-to-design-a-micromod-carrier-board). However, keep the above in mind, make sure your JTAG and I2C pinouts match the SoldierCrab ones.
+
+## Pinout
+
+Aside from in the schematic, you can find a (tested!) version of the SoM pinout in `amaranth-boards` format [here in the Tiliqua repository](https://github.com/apfelaudio/tiliqua/blob/e4d43d70f0be8f8c47809bad94cfb414b5939a86/gateware/src/tiliqua/tiliqua_platform.py#L18-L129).
+
+## Where do I get one?
+
+If you are interested in prototyping with this SoM, feel free to send me an email. They are not generally available yet, but I plan to make it available on my store soon.
 
 ## Builds on the following (awesome) open-hardware projects
 - The [Cynthion](https://github.com/greatscottgadgets/cynthion-hardware) project from Great Scott Gadgets.
