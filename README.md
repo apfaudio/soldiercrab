@@ -38,7 +38,7 @@ A nice resource for [designing appropriate carrier boards can be found here](htt
 
 Aside from in the schematic, you can find a (tested!) version of the SoM pinout in `amaranth-boards` format [here in the Tiliqua repository](https://github.com/apfelaudio/tiliqua/blob/e4d43d70f0be8f8c47809bad94cfb414b5939a86/gateware/src/tiliqua/tiliqua_platform.py#L18-L129).
 
-#### SC3 Complementary Pairs
+#### R3.0 Complementary Pairs
 
 ```
 6 are adjacent on the same side:
