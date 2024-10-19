@@ -63,3 +63,9 @@ If you are interested in prototyping with this SoM, feel free to send me an emai
 **Copyright (C) 2024 S. Holzapfel, apfelaudio UG (haftungsbeschränkt)**
 
 The files in this project are largely covered under the CERN Open-Hardware License V2 CERN-OHL-S, mirrored in the LICENSE text in this repository. This LICENSE and copyright notice do NOT apply to imported artifacts in this repository (i.e datasheets, third-party 3D models, symbols or footprints), or to dependencies released under a different (but compatible) open-source license.
+
+# Derivative works
+
+If you create or manufacture your own derivative hardware, the name "apfelaudio", the names of any apfelaudio products and the names of the authors, are *not to be used in derivative hardware or marketing materials*, except where obligated for attribution and for retaining the above copyright notice.
+
+For example, your modified version of "apfelaudio SoldierCrab" could be called "Sandy Modular - Clawcruncher".
