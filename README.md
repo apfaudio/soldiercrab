@@ -5,7 +5,7 @@
 ![Image of SoldierCrab R2.0 top and bottom](img/soldiercrab-r2.jpg)
 
 [**SoldierCrab**](https://en.wikipedia.org/wiki/Mictyris_longicarpus) is an embeddable FPGA SoM (System-on-Module) designed for use in high-speed audio and USB applications.
-It is the brain of [tiliqua](https://github.com/apfelaudio/tiliqua) and other [apfelaudio products](https://apfelaudio.com/).
+It is the brain of [tiliqua](https://github.com/apfaudio/tiliqua) and other [apf.audio products](https://apf.audio/).
 
 **SoldierCrab** has the following core features:
 - ECP5 FPGA (-25K or -45K variant in caBGA256 package)
@@ -36,7 +36,7 @@ A nice resource for [designing appropriate carrier boards can be found here](htt
 
 ## Pinout
 
-Aside from in the schematic, you can find a (tested!) version of the SoM pinout in `amaranth-boards` format [here in the Tiliqua repository](https://github.com/apfelaudio/tiliqua/blob/e4d43d70f0be8f8c47809bad94cfb414b5939a86/gateware/src/tiliqua/tiliqua_platform.py#L18-L129).
+Aside from in the schematic, you can find a (tested!) version of the SoM pinout in `amaranth-boards` format [here in the Tiliqua repository](https://github.com/apfaudio/tiliqua/blob/e4d43d70f0be8f8c47809bad94cfb414b5939a86/gateware/src/tiliqua/tiliqua_platform.py#L18-L129).
 
 #### R3.0 Complementary Pairs
 
@@ -60,12 +60,12 @@ If you are interested in prototyping with this SoM, feel free to send me an emai
 
 # License
 
-**Copyright (C) 2024 S. Holzapfel, apfelaudio UG (haftungsbeschränkt)**
+**Copyright (C) 2024 S. Holzapfel**
 
 The files in this project are largely covered under the CERN Open-Hardware License V2 CERN-OHL-S, mirrored in the LICENSE text in this repository. This LICENSE and copyright notice do NOT apply to imported artifacts in this repository (i.e datasheets, third-party 3D models, symbols or footprints), or to dependencies released under a different (but compatible) open-source license.
 
 # Derivative works
 
-If you create or manufacture your own derivative hardware, the name "apfelaudio", the names of any apfelaudio products and the names of the authors, are *not to be used in derivative hardware or marketing materials*, except where obligated for attribution and for retaining the above copyright notice.
+As an addendum to the above license: if you create or manufacture your own derivative hardware, the name `apf.audio`, the names of any `apf.audio` products and the names of the authors, are *not to be used in derivative hardware or marketing materials*, except where obligated for attribution and for retaining the above copyright notice.
 
-For example, your modified version of "apfelaudio SoldierCrab" could be called "Sandy Modular - Clawcruncher".
+For example, your adaptation of "apf.audio SoldierCrab" could be called "Sandy Modular - Clawcruncher".
