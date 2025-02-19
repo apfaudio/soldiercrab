@@ -1,0 +1,34 @@
+{
+    "layout": {
+        "alternation": "rows",
+        "vspace": "27mm",
+        "rotation": "180deg",
+        "rows": "2",
+        "cols": "3"
+    },
+    "tabs": {
+        "type": "full",
+        "patchcorners": "False"
+    },
+    "cuts": {
+        "type": "vcuts",
+        "linewidth": "0.1mm",
+        "textthickness": "0.1mm"
+    },
+    "framing": {
+        "type": "railslr",
+        "hspace": "3mm",
+        "width": "7mm"
+    },
+    "tooling": {
+        "type": "4hole",
+        "hoffset": "5mm",
+        "voffset": "5mm"
+    },
+    "fiducials": {
+        "type": "4fid",
+        "hoffset": "7mm",
+        "voffset": "10mm",
+        "opening": "3mm"
+    }
+}
