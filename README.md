@@ -1,21 +1,23 @@
 # SoldierCrab
 
-<sup>WARN: :construction: under construction! :construction: - this hardware is under active development</sup>
-
-![Image of SoldierCrab R2.0 top and bottom](img/soldiercrab-r2.jpg)
-
 [**SoldierCrab**](https://en.wikipedia.org/wiki/Mictyris_longicarpus) is an embeddable FPGA SoM (System-on-Module) designed for use in high-speed audio and USB applications.
-It is the brain of [tiliqua](https://github.com/apfaudio/tiliqua) and other [apf.audio products](https://apf.audio/).
+It is the brain of [tiliqua](https://github.com/apfaudio/tiliqua) and other [apf.audio products](https://apf.audio/), and looks like this:
+
+![image](https://github.com/user-attachments/assets/3d25d8c6-e9e2-4437-a14f-efbae723ee8d)
+
+A high-level block diagram:
+
+![image](https://github.com/user-attachments/assets/548ebfc4-92d1-47b3-a571-a5e420e2dd47)
 
 **SoldierCrab** has the following core features:
-- ECP5 FPGA (-25K or -45K variant in caBGA256 package)
-- HyperRAM / oSPI-RAM (tested up to 400MByte/sec)
-- USB2 PHY with exposed ID, it can be used in device or host mode
-- 1V1 / 1V8 / 2V5 regulators onboard, 3V3 is all that's needed
-- PROGRAMN internally exposed for multibooting bitstreams
+- **ECP5 FPGA**: -25K or -45K variant, caBGA256 (note: SERDES/PCIe not available in this package!)
+- **HyperRAM / oSPI-RAM**: tested up to 3.2Gbit/sec, or 3.8Gbit/sec with timing violations :)
+- **USB2 HS PHY**: 480Mbit/sec, with exposed ID, it can be used in device or host mode
+- **1V1 / 1V8 / 2V5 regulators onboard**, 3V3 is all that's needed
+- **PROGRAMN internally looped back** for multibooting bitstreams / internal bootloader
 - 2 indicator LEDs on the PCBA
 - 48MHz master clock
-- Card edge is basically: 47 exposed general purpose pins + 4-pin JTAG + USB2
+- Card edge is basically: **47 exposed general purpose pins + 4-pin JTAG + USB2**
 - 22mmx22mm board size with M.2 E-key card edge (see 'Physical Compatibility' below)
 
 ## Hardware Revisions
@@ -40,6 +42,8 @@ Aside from in the schematic, you can find a (tested!) version of the SoM pinout 
 
 #### R3.0 Complementary Pairs
 
+These pins on the M.2 connector are best for differential outputs (e.g. DVI).
+
 ```
 6 are adjacent on the same side:
 [(13, 15), (20, 22), (52, 54), (58, 60), (62, 64), (68, 70)]
@@ -53,10 +57,14 @@ Aside from in the schematic, you can find a (tested!) version of the SoM pinout 
 
 If you are interested in prototyping with this SoM, feel free to send me an email. They are not generally available yet, but I plan to make it available on my store soon.
 
+# Bootloader
+
+In theory, this SoM could bootload itself over the ULPI USB2 PHY, however I haven't started on this yet. This means a carrier board must expose the JTAG pins for an external programmer (check the schematic).
+
 ## Builds on the following (awesome) open-hardware projects
 - The [Cynthion](https://github.com/greatscottgadgets/cynthion-hardware) project from Great Scott Gadgets.
 - The [OrangeCrab](https://github.com/orangecrab-fpga/orangecrab-hardware) project from Greg Davill.
-- [Sparkfun Micromod](https://www.sparkfun.com/micromod).
+- Inspired by [Sparkfun Micromod](https://www.sparkfun.com/micromod), even though we are not 100% compatible with it.
 
 # License
 
