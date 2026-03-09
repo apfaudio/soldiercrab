@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "c0454eb8-156a-43a9-8152-10466a513f93")
 	(paper "A4")
 	(title_block
@@ -13,7 +13,9 @@
 	)
 	(lib_symbols
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -86,7 +88,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -98,7 +100,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -147,9 +149,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -268,6 +273,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Interface_USB:USB3343"
 			(exclude_from_sim no)
@@ -348,17 +354,17 @@
 				)
 			)
 			(symbol "USB3343_1_1"
-				(pin output line
-					(at 15.24 -12.7 180)
+				(pin input line
+					(at -15.24 12.7 0)
 					(length 2.54)
-					(name "DIR"
+					(name "~{RESETB}"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "22"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -366,53 +372,17 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 15.24 -5.08 180)
+				(pin input line
+					(at -15.24 7.62 0)
 					(length 2.54)
-					(name "DATA5"
+					(name "VBUS"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 -7.62 180)
-					(length 2.54)
-					(name "DATA6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 -10.16 180)
-					(length 2.54)
-					(name "DATA7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
+					(number "17"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -456,60 +426,6 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 0 22.86 270)
-					(length 2.54)
-					(name "VDD33"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -5.08 22.86 270)
-					(length 2.54)
-					(name "VBAT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 7.62 0)
-					(length 2.54)
-					(name "VBUS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at -15.24 0 0)
 					(length 2.54)
@@ -521,42 +437,6 @@
 						)
 					)
 					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -15.24 -17.78 0)
-					(length 2.54)
-					(name "RBIAS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 15.24 10.16 180)
-					(length 2.54)
-					(name "CLKOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -600,17 +480,35 @@
 						)
 					)
 				)
-				(pin input line
-					(at -15.24 12.7 0)
+				(pin passive line
+					(at -15.24 -17.78 0)
 					(length 2.54)
-					(name "~{RESETB}"
+					(name "RBIAS"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "22"
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -5.08 22.86 270)
+					(length 2.54)
+					(name "VBAT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -619,34 +517,16 @@
 					)
 				)
 				(pin power_out line
-					(at 2.54 22.86 270)
+					(at 0 22.86 270)
 					(length 2.54)
-					(name "VDD18"
+					(name "VDD33"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 15.24 -15.24 180)
-					(length 2.54)
-					(name "STP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "24"
+					(number "15"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -672,17 +552,53 @@
 						)
 					)
 				)
-				(pin output line
-					(at 15.24 -17.78 180)
+				(pin power_out line
+					(at 2.54 22.86 270)
 					(length 2.54)
-					(name "NXT"
+					(name "VDD18"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 7.62 22.86 270)
+					(length 2.54)
+					(name "VDDIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 10.16 180)
+					(length 2.54)
+					(name "CLKOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -780,17 +696,107 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 7.62 22.86 270)
+				(pin bidirectional line
+					(at 15.24 -5.08 180)
 					(length 2.54)
-					(name "VDDIO"
+					(name "DATA5"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "9"
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -7.62 180)
+					(length 2.54)
+					(name "DATA6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -10.16 180)
+					(length 2.54)
+					(name "DATA7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 -12.7 180)
+					(length 2.54)
+					(name "DIR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 15.24 -15.24 180)
+					(length 2.54)
+					(name "STP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 -17.78 180)
+					(length 2.54)
+					(name "NXT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -799,6 +805,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3V3"
 			(power)
@@ -876,7 +883,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -888,7 +895,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -902,7 +909,8 @@
 			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+3V3"
 						(effects
 							(font
@@ -919,6 +927,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -998,7 +1007,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -1015,7 +1025,40 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "TODO: verify ULPI.RESET is connected on all ECP5 parts"
+		(exclude_from_sim no)
+		(at 75.946 92.202 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3294b45a-93d4-4fa3-be81-ec0755927fd7")
+	)
+	(text "TODO: check these supplies"
+		(exclude_from_sim no)
+		(at 161.544 42.672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d4859558-7a47-4c1d-b5af-02ee9ec310f3")
+	)
+	(text "[1.8V < VDDIO < 3.3V]"
+		(exclude_from_sim no)
+		(at 141.732 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e9cd8685-9e21-474f-8f89-67cedd6ac8df")
 	)
 	(junction
 		(at 147.32 78.74)
@@ -1770,41 +1813,8 @@
 		)
 		(uuid "fffc40d2-7d9e-4e6f-bef1-8123b112fe22")
 	)
-	(text "TODO: verify ULPI.RESET is connected on all ECP5 parts"
-		(exclude_from_sim no)
-		(at 75.946 92.202 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3294b45a-93d4-4fa3-be81-ec0755927fd7")
-	)
-	(text "TODO: check these supplies"
-		(exclude_from_sim no)
-		(at 161.544 42.672 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "d4859558-7a47-4c1d-b5af-02ee9ec310f3")
-	)
-	(text "[1.8V < VDDIO < 3.3V]"
-		(exclude_from_sim no)
-		(at 141.732 76.2 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e9cd8685-9e21-474f-8f89-67cedd6ac8df")
-	)
 	(label "USB0.STP"
 		(at 134.62 118.11 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1815,7 +1825,6 @@
 	)
 	(label "USB0.DIR"
 		(at 134.62 115.57 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1826,7 +1835,6 @@
 	)
 	(label "USB0.DATA3"
 		(at 134.62 102.87 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1837,7 +1845,6 @@
 	)
 	(label "USB0.NXT"
 		(at 134.62 120.65 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1848,7 +1855,6 @@
 	)
 	(label "ULPI_1V8"
 		(at 154.94 50.8 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1859,7 +1865,6 @@
 	)
 	(label "USB0.REFCLK"
 		(at 134.62 123.19 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1870,7 +1875,6 @@
 	)
 	(label "USB0.~{RESET}"
 		(at 134.62 92.71 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1881,7 +1885,6 @@
 	)
 	(label "USB0.DATA6"
 		(at 134.62 110.49 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1892,7 +1895,6 @@
 	)
 	(label "USB0.DATA1"
 		(at 134.62 97.79 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1903,7 +1905,6 @@
 	)
 	(label "USB0.DATA7"
 		(at 134.62 113.03 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1914,7 +1915,6 @@
 	)
 	(label "USB0.DATA5"
 		(at 134.62 107.95 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1925,7 +1925,6 @@
 	)
 	(label "USB0.DATA2"
 		(at 134.62 100.33 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1936,7 +1935,6 @@
 	)
 	(label "ULPI_3V3"
 		(at 163.83 50.8 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1947,7 +1945,6 @@
 	)
 	(label "USB0.DATA4"
 		(at 134.62 105.41 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1958,7 +1955,6 @@
 	)
 	(label "USB0.DATA0"
 		(at 134.62 95.25 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1970,7 +1966,6 @@
 	(hierarchical_label "USB_DP"
 		(shape passive)
 		(at 209.55 97.79 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1982,7 +1977,6 @@
 	(hierarchical_label "USB_DM"
 		(shape passive)
 		(at 209.55 100.33 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1994,7 +1988,6 @@
 	(hierarchical_label "VDDIO"
 		(shape input)
 		(at 130.81 78.74 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2006,7 +1999,6 @@
 	(hierarchical_label "USB0{ULPI}"
 		(shape bidirectional)
 		(at 132.08 87.63 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2018,7 +2010,6 @@
 	(hierarchical_label "USB_ID"
 		(shape passive)
 		(at 209.55 102.87 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2030,7 +2021,6 @@
 	(hierarchical_label "USB_VBUS_CONN"
 		(shape passive)
 		(at 193.04 66.04 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
