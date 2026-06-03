@@ -55,7 +55,9 @@ These pins on the M.2 connector are best for differential outputs (e.g. DVI).
 
 ## Where do I get one?
 
-If you are interested in prototyping with this SoM, feel free to send me an email. They are not generally available yet, but I plan to make it available on my store soon.
+Pre-assembled and tested SoldierCrabs are available on [Crowd Supply](https://www.crowdsupply.com/apfaudio/tiliqua) (ships from US) or by [emailing me](https://apf.audio/impressum/) (ships from EU).
+
+I've also published an open-hardware [carrier board called 'sandflat'](https://github.com/vk2seb/sandflat) which is a cheaper (and less feature-rich) alternative to Tiliqua, if you're just wanting to test out SoldierCrab in your own domain.
 
 # Bootloader
 
