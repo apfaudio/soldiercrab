@@ -51,7 +51,23 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.2
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.2,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -269,7 +285,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "${VERSION}"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -475,11 +491,14 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
+      "field_name_whitespace": "warning",
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
       "global_label_dangling": "warning",
+      "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
+      "isolated_pin_label": "warning",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
@@ -502,6 +521,7 @@
       "similar_power": "warning",
       "simulation_model_issue": "ignore",
       "single_global_label": "ignore",
+      "stacked_pin_name": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
       "undefined_netclass": "error",
@@ -563,6 +583,10 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "annotation": {
+      "method": 0,
+      "sort_order": 0
+    },
     "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
@@ -694,7 +718,43 @@
       "sort_asc": true,
       "sort_field": "Reference"
     },
-    "bus_aliases": {},
+    "bus_aliases": {
+      "Config": [
+        "DONE",
+        "~{INIT}",
+        "~{PROGRAM}"
+      ],
+      "HyperRAM": [
+        "DQ[0..15]",
+        "CK",
+        "~{CS}",
+        "DM0",
+        "DM1"
+      ],
+      "JTAG": [
+        "TMS",
+        "TCK",
+        "TDI",
+        "TDO"
+      ],
+      "Type_C": [
+        "SDA",
+        "SCL",
+        "SBU1S",
+        "SBU2S",
+        "~{INT}",
+        "~{FAULT}"
+      ],
+      "ULPI": [
+        "DATA[0..7]",
+        "CLK",
+        "DIR",
+        "STP",
+        "NXT",
+        "~{RESET}",
+        "REFCLK"
+      ]
+    },
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -702,6 +762,7 @@
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
+      "hop_over_size_choice": 0,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -734,6 +795,7 @@
     },
     "page_layout_descr_file": "",
     "plot_directory": "../../tiliqua/hardware/schematics/",
+    "reuse_designators": true,
     "space_save_all_events": true,
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
@@ -748,14 +810,16 @@
       {
         "filename": "soldiercrab.kicad_sch",
         "name": "soldiercrab",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "fb621148-8145-4217-9712-738e1b5a4823"
       }
-    ]
+    ],
+    "used_designators": "",
+    "variants": []
   },
   "sheets": [
     [
       "fb621148-8145-4217-9712-738e1b5a4823",
-      "Root"
+      "soldiercrab"
     ],
     [
       "d6473fd6-7fca-4f4e-a434-76243f5aa389",
