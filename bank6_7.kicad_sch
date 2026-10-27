@@ -6610,7 +6610,7 @@
 		(uuid "6654a00d-92f7-4b48-9cb7-0893f2483cbb")
 	)
 	(label "RAM.DM1"
-		(at 204.47 52.07 0)
+		(at 204.47 77.47 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6720,7 +6720,7 @@
 		(uuid "a4033c75-eb25-4c7f-97ad-5397d004b5ea")
 	)
 	(label "RAM.DQ9"
-		(at 204.47 77.47 0)
+		(at 204.47 52.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)

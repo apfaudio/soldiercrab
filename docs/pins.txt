@@ -1,0 +1,55 @@
+B1,DQ9 (WAS DM1)
+B2,~CS
+C3,CLK
+D3,NC
+C1,NC
+C2,DQ14
+E3,DQ12
+F3,DQ8
+D1,DM1 (WAS DQ9)
+E2,DQ13,
+F4,GND
+F5,VCCRAM
+G5,VCCRAM
+G4,DQ11
+F2,DQ10
+E1,DQ15
+F1,DQ4
+G2,DQ2
+G3,DQ1
+H3,DQ5
+H5,VCCRAM
+H4,VCCRAM
+J4,VCCRAM
+J5,VCCRAM
+G1,DM0
+H2,DQ3
+J3,DQ6
+K3,USB.D7 (should be same as before?)
+J1,DQ7
+J2,DQ0
+K1,USB.D6 (should be same as before?)
+K2,USB.D5 (should be same as before?)
+
+res   signal     ball  PIO    bank  DQS      role
+  ---------------------------------------------------
+  ram0  CLK        C3    PL11C  7     LDQ17    data
+  ram0  DQ0        J2    PL32B  7     LDQ29    data
+  ram0  DQ1        G3    PL23C  7     LDQ29    data
+  ram0  DQ2        G2    PL23B  7     LDQ29    data
+  ram0  DQ3        H2    PL29B  7     LDQSN29  DQSN complement (usable as DQ)
+  ram0  DQ4        F1    PL23A  7     LDQ29    data
+  ram0  DQ5        H3    PL23D  7     LDQ29    data
+  ram0  DQ6        J3    PL29C  7     LDQ29    data
+  ram0  DQ7        J1    PL32A  7     LDQ29    data
+  ram0  DM0 (DQS)  G1    PL29A  7     LDQS29   DQS STROBE pad
+  ram0  ~CS        B2    PL11B  7     LDQ17    data
+  ram1  DQ8        F3    PL14D  7     LDQ17    data
+  ram1  DQ9        B1    PL11A  7     LDQ17    data
+  ram1  DQ10       F2    PL20C  7     LDQ17    data
+  ram1  DQ11       G4    PL20B  7     LDQ17    data
+  ram1  DQ12       E3    PL14C  7     LDQ17    data
+  ram1  DQ13       E2    PL17B  7     LDQSN17  DQSN complement (usable as DQ)
+  ram1  DQ14       C2    PL14B  7     LDQ17    data
+  ram1  DQ15       E1    PL20D  7     LDQ17    data
+  ram1  DM1 (DQS)  D1    PL17A  7     LDQS17   DQS STROBE pad
